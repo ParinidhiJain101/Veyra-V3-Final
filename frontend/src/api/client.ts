@@ -45,7 +45,8 @@ export const getApiBaseUrl = (): string => {
 
 export const getDocsUrl = (): string => {
   const base = getApiBaseUrl();
-  return base ? `${base}/docs` : 'http://127.0.0.1:8000/docs';
+  if (base) return `${base}/docs`;
+  return typeof window !== 'undefined' ? '/docs' : 'http://127.0.0.1:8000/docs';
 };
 
 const DEFAULT_BASE_URL = getApiBaseUrl();
