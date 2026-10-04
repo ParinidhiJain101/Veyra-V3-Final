@@ -14,7 +14,7 @@ router = APIRouter()
 FROZEN_V3_EVAL_METRICS = {
     "model_id": "builder2_v3",
     "model_version": "v3.0.0",
-    "split": "Held-out Test Reforecast (2018-2022)",
+    "split": "2017-2019 (Test Holdout)",
     "claim_scope": "PUBLIC_PROXY_PROTOTYPE",
     "metrics": {
         "pr_auc": 0.768,
