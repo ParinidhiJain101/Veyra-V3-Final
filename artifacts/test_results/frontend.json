@@ -1,0 +1,14 @@
+{
+  "framework": "vitest",
+  "test_suites": 26,
+  "test_files": 26,
+  "total_tests": 129,
+  "passed": 129,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "pending": 0,
+  "todo": 0,
+  "success": true,
+  "status": "PASSED"
+}

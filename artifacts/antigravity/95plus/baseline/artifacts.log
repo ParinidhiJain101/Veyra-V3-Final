@@ -1,0 +1,33 @@
+﻿=================================================================
+Veyra ML Artifact Chain & SHA-256 Provenance Verification
+=================================================================
+
+Verifying artifact [model]: models/v3/lightgbm_v3_challenger.joblib...
+  [PASS] SHA-256 matched: 00a8410746f4a0eecbf7e76aaa0565143fc948d0e06aea65e7bcc4ce28a1c660
+  [PASS] File size: 1,046,844 bytes
+
+Verifying artifact [calibrator]: models/v3/probability_calibrator_v3.joblib...
+  [PASS] SHA-256 matched: 9f448606ce4338ded92f238a551b3a9d8e6d2cb5902e8bc687bce5f5850af531
+  [PASS] File size: 2,791 bytes
+
+Verifying artifact [features]: models/v3/feature_names.json...
+  [PASS] SHA-256 matched: 702ff4153fd95d8c9de3bbd01461d65fde0ef207099f7f3a8e7f5c8bac02031e
+  [PASS] File size: 1,063 bytes
+  [PASS] Feature count verified: 50 canonical features.
+
+[Authority] Cross-verifying against backend/app/core/release_manifest.json...
+  [PASS] Release manifest model SHA verified (veyra-v3-benchmark-lightgbm)
+  [PASS] Release manifest calibrator SHA verified (IsotonicRegression)
+  [PASS] Release manifest 50-feature contract verified
+  [PASS] Release manifest operational threshold verified: 0.06
+  [PASS] Release authority route: /v1/predict, fallback: safe_abstention
+
+[Sanity] Verifying model and calibrator loadability with joblib...
+  [PASS] Model loaded: Booster
+  [PASS] Booster num_feature verified: 50
+  [PASS] Booster feature names match feature_names.json in exact order.
+  [PASS] Calibrator loaded and verified: IsotonicRegression
+
+=================================================================
+All ML artifact integrity and release authority checks PASSED.
+=================================================================

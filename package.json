@@ -1,0 +1,13 @@
+{
+  "name": "veyra-sentinel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Veyra Sentinel — AI-Powered Numerical Weather Prediction Reliability Layer",
+  "scripts": {
+    "setup": "npm --prefix frontend install",
+    "test": "npm --prefix frontend test",
+    "test:frontend": "npm --prefix frontend test",
+    "build": "npm --prefix frontend run build",
+    "dev": "npm --prefix frontend run dev"
+  }
+}

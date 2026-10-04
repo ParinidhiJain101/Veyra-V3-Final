@@ -1,0 +1,58 @@
+﻿======================================================================
+ VEYRA PHASE 3 ù REAL-DATA & MANIFEST SCIENTIFIC INTEGRITY AUDIT
+======================================================================
+
+[1/5] Validating Data Manifest Metadata (data_manifest.json)...
+      - Dataset Name:     benchmark_real_75_dataset
+      - Version:          v3-p3-75
+      - Declared Records: 15000
+      - Evidence Class:   REPRODUCED_REAL_HELD_OUT
+
+[2/5] Auditing Raw Source Manifest & Payloads on Disk...
+      [PASS] Raw Source verified: ECMWF_Copernicus_Climate_Change_Service (169,106 bytes | 7bfb9148d7679aa5...)
+      [PASS] Raw Source verified: NOAA_NCEP_ECMWF_DWD_ECCC_OpenMeteo (410,737 bytes | d7b7f65879e5889b...)
+      [PASS] Raw Source verified: ECMWF_Copernicus_Climate_Change_Service (174,672 bytes | 99ebd4ff7c693c27...)
+      [PASS] Raw Source verified: NOAA_NCEP_ECMWF_DWD_ECCC_OpenMeteo (432,440 bytes | 7be5f24ca52a771b...)
+      [PASS] Raw Source verified: ECMWF_Copernicus_Climate_Change_Service (172,947 bytes | c21e52744dfbf85e...)
+      [PASS] Raw Source verified: NOAA_NCEP_ECMWF_DWD_ECCC_OpenMeteo (426,815 bytes | a7964335d6a43f39...)
+      [PASS] Raw Source verified: ECMWF_Copernicus_Climate_Change_Service (170,958 bytes | a5673ffe25a8285d...)
+      [PASS] Raw Source verified: NOAA_NCEP_ECMWF_DWD_ECCC_OpenMeteo (417,808 bytes | 33a3ed24ee592eff...)
+      [PASS] Raw Source verified: ECMWF_Copernicus_Climate_Change_Service (175,387 bytes | 28702b393b18427e...)
+      [PASS] Raw Source verified: NOAA_NCEP_ECMWF_DWD_ECCC_OpenMeteo (435,309 bytes | 78bf09f19c20cc67...)
+      [PASS] Raw Source verified: ECMWF_Copernicus_Climate_Change_Service (170,285 bytes | ef963ed93d48609b...)
+      [PASS] Raw Source verified: NOAA_NCEP_ECMWF_DWD_ECCC_OpenMeteo (416,410 bytes | 101d0b35b16601d5...)
+      [PASS] Raw Source verified: ECMWF_Copernicus_Climate_Change_Service (167,640 bytes | 0c19443230a1b06a...)
+      [PASS] Raw Source verified: NOAA_NCEP_ECMWF_DWD_ECCC_OpenMeteo (404,189 bytes | 4f0645bc96a2bbe6...)
+      [PASS] Raw Source verified: ECMWF_Copernicus_Climate_Change_Service (169,332 bytes | ae86fbeb95ce5046...)
+      [PASS] Raw Source verified: NOAA_NCEP_ECMWF_DWD_ECCC_OpenMeteo (412,083 bytes | 2c66f71563105c51...)
+      [PASS] Raw Source verified: ECMWF_Copernicus_Climate_Change_Service (172,369 bytes | 7d44e96c8bb49025...)
+      [PASS] Raw Source verified: NOAA_NCEP_ECMWF_DWD_ECCC_OpenMeteo (424,175 bytes | 09dc06d09ffc50ed...)
+      [PASS] Raw Source verified: ECMWF_Copernicus_Climate_Change_Service (169,742 bytes | 4d0ccb5e754c75bc...)
+      [PASS] Raw Source verified: NOAA_NCEP_ECMWF_DWD_ECCC_OpenMeteo (412,880 bytes | 0e86fefc7b7f1737...)
+      [PASS] Raw Source verified: ECMWF_Copernicus_Climate_Change_Service (169,462 bytes | 2e733388bdc11abc...)
+      [PASS] Raw Source verified: NOAA_NCEP_ECMWF_DWD_ECCC_OpenMeteo (411,983 bytes | 14d39f755f5d4b5c...)
+      [PASS] Raw Source verified: ECMWF_Copernicus_Climate_Change_Service (172,471 bytes | 536818a367dc6380...)
+      [PASS] Raw Source verified: NOAA_NCEP_ECMWF_DWD_ECCC_OpenMeteo (422,727 bytes | ee6f94b2cdae7dfe...)
+      [PASS] Raw Source verified: ECMWF_Copernicus_Climate_Change_Service (170,992 bytes | ea0c9e48d44ecafb...)
+      [PASS] Raw Source verified: NOAA_NCEP_ECMWF_DWD_ECCC_OpenMeteo (418,830 bytes | 963fb2c8ef6f747f...)
+      [PASS] Raw Source verified: ECMWF_Copernicus_Climate_Change_Service (173,797 bytes | 480b90fd99f7ad39...)
+      [PASS] Raw Source verified: NOAA_NCEP_ECMWF_DWD_ECCC_OpenMeteo (430,326 bytes | 7c1bc5bebe771c94...)
+      [PASS] Raw Source verified: ECMWF_Copernicus_Climate_Change_Service (174,580 bytes | 4ce86c1db1f118b1...)
+      [PASS] Raw Source verified: NOAA_NCEP_ECMWF_DWD_ECCC_OpenMeteo (432,201 bytes | a1a1ab459e430978...)
+
+[3/5] Verifying Dataset SHA-256 and File Integrity...
+      [PASS] Dataset SHA-256 verified: f811bc05e5bfea2855dbce9c38727fa2b0e069ee066052de52c9826ce1815ee3
+
+[4/5] Scanning and Verifying All Records for Anti-Leakage & 21-Field Schema...
+      - Records Scanned:          15,000
+      - Schema Errors:             0
+      - Temporal Leakage Errors:   0
+      - Bust Derivation Errors:    0
+      - Row Hash Inconsistencies:  0
+      - Duplicate Episodes:        0
+
+[5/5] Auditing Split and Anti-Leakage Evidence Manifests...
+      [PASS] Out-Of-Time Split and Zero-Leakage Invariants audited.
+======================================================================
+ [+] ALL PHASE 3 REAL-DATA INTEGRITY & ANTI-LEAKAGE CHECKS PASSED.
+======================================================================

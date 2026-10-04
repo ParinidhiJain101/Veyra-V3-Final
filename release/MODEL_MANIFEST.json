@@ -1,0 +1,31 @@
+{
+  "model_name": "VEYRA V3 LightGBM Challenger Bust Predictor",
+  "model_version": "3.0.0",
+  "model_file": "models/v3/lightgbm_v3_challenger.joblib",
+  "sha256": "00a8410746f4a0eecbf7e76aaa0565143fc948d0e06aea65e7bcc4ce28a1c660",
+  "calibrator_file": "models/v3/probability_calibrator_v3.joblib",
+  "calibrator_sha256": "9f448606ce4338ded92f238a551b3a9d8e6d2cb5902e8bc687bce5f5850af531",
+  "feature_schema_file": "models/v3/feature_names.json",
+  "feature_schema_sha256": "702ff4153fd95d8c9de3bbd01461d65fde0ef207099f7f3a8e7f5c8bac02031e",
+  "feature_count": 50,
+  "hyperparameters": {
+    "boosting_type": "gbdt",
+    "objective": "binary",
+    "num_leaves": 31,
+    "learning_rate": 0.05,
+    "feature_fraction": 0.85,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 5,
+    "min_child_samples": 20
+  },
+  "calibrator_type": "IsotonicRegression(out_of_bounds='clip')",
+  "evaluation_metrics": {
+    "brier_score": 0.0654,
+    "brier_skill_score": 0.0009,
+    "roc_auc": 0.6913,
+    "pr_auc": 0.1189,
+    "ece": 0.0349,
+    "log_loss": 0.2558
+  },
+  "operational_threshold": 0.06
+}

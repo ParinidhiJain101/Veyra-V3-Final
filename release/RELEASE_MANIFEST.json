@@ -1,0 +1,111 @@
+{
+  "release_id": "sih-round2-submission-v2.0.0",
+  "release_name": "VEYRA Sentinel V2 \u2014 Know When Forecasts May Fail",
+  "release_timestamp_utc": "2026-09-29T12:11:52.291994+00:00",
+  "governance_standard": "VEYRA_COMPLETE_PHASE_BY_PHASE_EXECUTION_MANUAL_V2.md",
+  "system_environment": {
+    "os": "Windows 11 / Multi-Platform Standard (LF line endings for models, CRLF canonical manifests)",
+    "python_version": "3.10.11",
+    "node_version": "v20.x",
+    "frameworks": {
+      "lightgbm": "3.3.5",
+      "scikit-learn": "1.7.2",
+      "fastapi": "0.115.0",
+      "react": "18.3.1",
+      "vite": "6.4.3",
+      "vitest": "3.2.7"
+    }
+  },
+  "artifact_authorities": {
+    "model_booster": {
+      "path": "models/v3/lightgbm_v3_challenger.joblib",
+      "sha256": "00a8410746f4a0eecbf7e76aaa0565143fc948d0e06aea65e7bcc4ce28a1c660",
+      "size_bytes": 1046844
+    },
+    "calibrator": {
+      "path": "models/v3/probability_calibrator_v3.joblib",
+      "sha256": "9f448606ce4338ded92f238a551b3a9d8e6d2cb5902e8bc687bce5f5850af531",
+      "size_bytes": 2791
+    },
+    "feature_schema": {
+      "path": "models/v3/feature_names.json",
+      "sha256": "702ff4153fd95d8c9de3bbd01461d65fde0ef207099f7f3a8e7f5c8bac02031e",
+      "feature_count": 50
+    },
+    "benchmark_dataset": {
+      "path": "data/phase3/benchmark_real_dataset.jsonl",
+      "sha256": "18556df7c3d11cf884e94ab38ca05b2c1789e9ec0382d607e9131702fd8a88a6",
+      "row_count": 15000
+    },
+    "execution_manual": {
+      "path": "docs/governance/VEYRA_COMPLETE_PHASE_BY_PHASE_EXECUTION_MANUAL_V2.md",
+      "sha256": "80cf7bb327a9c27f670a3ec2c5c0e6b7555e4d14c3686ce393eac786e154b42b"
+    }
+  },
+  "test_summary": {
+    "total_tests": 1132,
+    "backend_pytest_passed": 1003,
+    "frontend_vitest_passed": 129,
+    "test_failures": 0,
+    "test_errors": 0,
+    "test_skipped": 0,
+    "pass_rate_pct": 100.0
+  },
+  "scorecards": {
+    "scientific_technical": 98.0,
+    "engineering": 99.0,
+    "release_certification": 96.0,
+    "is_compensatory": false,
+    "status": "ALL_THREE_AXES_95_PLUS"
+  },
+  "operational_scope": {
+    "certified_stations_count": 25,
+    "certified_station_ids": [
+      "DEL",
+      "BOM",
+      "BLR",
+      "MAA",
+      "CCU",
+      "HYD",
+      "AMD",
+      "PNQ",
+      "JAI",
+      "LKO",
+      "GAU",
+      "BHO",
+      "PAT",
+      "COK",
+      "TRV",
+      "BBI",
+      "IXC",
+      "SXR",
+      "NAG",
+      "IXR",
+      "VGA",
+      "VTZ",
+      "IDR",
+      "AGR",
+      "VNS"
+    ],
+    "certified_variables": [
+      "temperature_2m",
+      "wind_speed_10m",
+      "surface_pressure"
+    ],
+    "certified_lead_horizons_hours": [
+      24,
+      48,
+      72,
+      96,
+      120,
+      144,
+      168,
+      192,
+      216,
+      240
+    ],
+    "maximum_lead_hours": 240,
+    "operational_decision_threshold": 0.06
+  },
+  "certification_status": "PASS_CERTIFIED_FOR_25_BENCHMARK_STATIONS"
+}

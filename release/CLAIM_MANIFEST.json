@@ -1,0 +1,22 @@
+{
+  "registry_source": "manifests/CLAIM_REGISTRY.md",
+  "total_claims_registered": 20,
+  "claims_by_status": {
+    "CERTIFIED": 13,
+    "EXPERIMENTAL": 2,
+    "FIXTURE_ONLY": 2,
+    "OPERATIONAL_ONLY": 1,
+    "DIAGNOSTIC": 1,
+    "BLOCKED": 1
+  },
+  "claims_by_evidence_class": {
+    "EMPIRICAL_VERIFIED": 9,
+    "ENGINEERING_REPRODUCED": 4,
+    "SAFETY_INVARIANT": 2,
+    "SPECIALIST_HEURISTIC": 2,
+    "FIXTURE_SYNTHETIC": 2,
+    "GOVERNANCE_SCORECARD": 1
+  },
+  "contradicted_claims_eliminated": 4,
+  "zero_fabrication_policy_enforced": true
+}

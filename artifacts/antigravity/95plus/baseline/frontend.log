@@ -1,0 +1,54 @@
+﻿
+[1m[46m RUN [49m[22m [36mv3.2.7 [39m[90mD:/Veyra-/Veyra-Know-When-Forecasts-May-Fail-VERSION-3-main/Veyra-Know-When-Forecasts-May-Fail-VERSION-3-main/frontend[39m
+
+ [32mΓ£ô[39m src/test/ScientificCertification.test.tsx [2m([22m[2m7 tests[22m[2m)[22m[33m 344[2mms[22m[39m
+ [32mΓ£ô[39m src/test/ForecastRevision.test.tsx [2m([22m[2m12 tests[22m[2m)[22m[33m 2282[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m ForecastRevisionPanel Component (Day 30)[2m > [22mrenders the header with Day 30 badge and initial loading [33m 440[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m ForecastRevisionPanel Component (Day 30)[2m > [22mrenders previous, current values, revision delta, direction, and units [33m 312[2mms[22m[39m
+ [32mΓ£ô[39m src/test/ForecastDisagreement.test.tsx [2m([22m[2m11 tests[22m[2m)[22m[33m 2306[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m ForecastDisagreementPanel Component (Day 29)[2m > [22mrenders the header with Day 29 badge and NOAA GEFS member count [33m 487[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m ForecastDisagreementPanel Component (Day 29)[2m > [22madapts physical units when switching atmospheric variables [33m 318[2mms[22m[39m
+ [32mΓ£ô[39m src/test/SpatialReliability.test.tsx [2m([22m[2m9 tests[22m[2m)[22m[33m 3095[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m SpatialReliabilityPanel Component[2m > [22mrenders discrete markers corresponding to evaluated valid points [33m 374[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m SpatialReliabilityPanel Component[2m > [22mupdates selected station card when clicking a marker [33m 412[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m SpatialReliabilityPanel Component[2m > [22mtriggers a new backend evaluation when changing variable [33m 713[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m SpatialReliabilityPanel Component[2m > [22mdistinguishes benchmark scope (<=240h) from extended operational horizon (>240h) [33m 492[2mms[22m[39m
+ [32mΓ£ô[39m src/test/MultiLocation.test.tsx [2m([22m[2m11 tests[22m[2m)[22m[33m 4075[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m MultiLocationPanel Component (Day 28)[2m > [22mrenders the multi-location header and scientific principles disclaimer [33m 328[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m MultiLocationPanel Component (Day 28)[2m > [22mrenders multiple location cards with calibrated P(BUST) and risk badges [33m 521[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m MultiLocationPanel Component (Day 28)[2m > [22mdisplays summary metrics matching backend summary accurately [33m 344[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m MultiLocationPanel Component (Day 28)[2m > [22mtoggles between cards view and dense table view [33m 617[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m MultiLocationPanel Component (Day 28)[2m > [22mfilters locations by risk tier [33m 541[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m MultiLocationPanel Component (Day 28)[2m > [22minspects selected location and displays diagnostics and physical drivers [33m 306[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m MultiLocationPanel Component (Day 28)[2m > [22mtriggers real backend evaluation when switching variable and horizon [33m 463[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m MultiLocationPanel Component (Day 28)[2m > [22mdistinguishes benchmark lead scope (<=240h) from extended operational horizon (>240h) [33m 424[2mms[22m[39m
+ [32mΓ£ô[39m src/test/Day24ProbabilisticIntelligence.test.tsx [2m([22m[2m5 tests[22m[2m)[22m[33m 521[2mms[22m[39m
+ [32mΓ£ô[39m src/test/ParityVerification.test.tsx [2m([22m[2m3 tests[22m[2m)[22m[33m 1811[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m Frontend <-> Backend Exact Value Parity Regression Tests[2m > [22mrenders distinct probabilities across horizons without copying Day 1 to all horizons [33m 1098[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m Frontend <-> Backend Exact Value Parity Regression Tests[2m > [22msafely renders abstention without falling back to fake 0%, LOW, or SUPPORTED [33m 556[2mms[22m[39m
+ [32mΓ£ô[39m src/test/RiskTimeline.test.tsx [2m([22m[2m24 tests[22m[2m)[22m[33m 5839[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m Day 16 ΓÇö Visual Forecast Risk & Timeline Tests[2m > [22m1. Timeline renders expected horizon count (7 nodes for 7-Day preset) [33m 520[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m Day 16 ΓÇö Visual Forecast Risk & Timeline Tests[2m > [22m17. Stale timeline is cleared when new timeline request is initiated [33m 1110[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m Day 16 ΓÇö Visual Forecast Risk & Timeline Tests[2m > [22m18. Validation failure clears stale timeline state [33m 601[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m Day 16 ΓÇö Visual Forecast Risk & Timeline Tests[2m > [22m19. Handles 429 rate-limit error gracefully [33m 375[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m Day 16 ΓÇö Visual Forecast Risk & Timeline Tests[2m > [22m22. Day 15 Single Prediction workflow continues functioning flawlessly [33m 417[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m Day 16 ΓÇö Visual Forecast Risk & Timeline Tests[2m > [22m23. [TEST 10 REGRESSION] Switching from Timeline mode to Single mode clears timeline and selected horizon details [33m 558[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m Day 16 ΓÇö Visual Forecast Risk & Timeline Tests[2m > [22m24. [TEST 10 REGRESSION] Switching from Single mode to Timeline mode clears single prediction results [33m 545[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m Day 16 ΓÇö Visual Forecast Risk & Timeline Tests[2m > [22m25. Mode switching before submission preserves clean empty states without rendering stale results [33m 310[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m Day 16 ΓÇö Visual Forecast Risk & Timeline Tests[2m > [22m26. Location and variable form inputs are preserved across mode switches [33m 375[2mms[22m[39m
+ [32mΓ£ô[39m src/test/Dashboard.test.tsx [2m([22m[2m29 tests[22m[2m)[22m[33m 6659[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m Veyra Frontend Dashboard Component Tests[2m > [22mrenders the dashboard with product identity and form controls [33m 1303[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m Veyra Frontend Dashboard Component Tests[2m > [22mvalidates required fields and shows client-side validation error on blank location [33m 756[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m Veyra Frontend Dashboard Component Tests[2m > [22mexecutes full prediction lifecycle in App component [33m 835[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m Veyra Frontend Dashboard Component Tests[2m > [22mTEST A: clears stale prediction when user modifies target location input [33m 415[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m Veyra Frontend Dashboard Component Tests[2m > [22mTEST B: clears previous success when subsequent request results in safe abstention [33m 654[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m Veyra Frontend Dashboard Component Tests[2m > [22mTEST C: clears stale success when subsequent request fails with network error [33m 526[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m Veyra Frontend Dashboard Component Tests[2m > [22mTEST D: clears old error banner when a valid retry succeeds [33m 496[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m Veyra Frontend Dashboard Component Tests[2m > [22mTEST E: replaces result A with result B cleanly across consecutive successful requests [33m 445[2mms[22m[39m
+   [33m[2mΓ£ô[22m[39m Veyra Frontend Dashboard Component Tests[2m > [22mHV-002 Stale Coordinate Clearing & Geocoding Invalidation[2m > [22mclears coordinates when user edits location away from resolved target and on failed resolution [33m 452[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m9 passed[39m[22m[90m (9)[39m
+[2m      Tests [22m [1m[32m111 passed[39m[22m[90m (111)[39m
+[2m   Start at [22m 12:59:59
+[2m   Duration [22m 28.60s[2m (transform 3.15s, setup 21.33s, collect 20.53s, tests 26.93s, environment 99.48s, prepare 9.15s)[22m
+

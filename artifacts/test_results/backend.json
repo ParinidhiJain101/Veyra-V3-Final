@@ -1,0 +1,10 @@
+{
+  "framework": "pytest",
+  "total_tests": 1003,
+  "passed": 1003,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "duration_seconds": 244.555,
+  "status": "PASSED"
+}

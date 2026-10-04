@@ -1,0 +1,82 @@
+﻿........................................................................ [  7%]
+........................................................................ [ 14%]
+........................................................................ [ 21%]
+........................................................................ [ 28%]
+........................................................................ [ 35%]
+........................................................................ [ 43%]
+........................................................................ [ 50%]
+........................................................................ [ 57%]
+........................................................................ [ 64%]
+........................................................................ [ 71%]
+........................................................................ [ 78%]
+........................................................................ [ 86%]
+........................................................................ [ 93%]
+...................................................................      [100%]
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  D:\Veyra-\Veyra-Know-When-Forecasts-May-Fail-VERSION-3-main\Veyra-Know-When-Forecasts-May-Fail-VERSION-3-main\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+backend/tests/test_day21_post_merge_repairs.py::test_accepted_compatibility_model_type_routes_to_v3
+  D:\Veyra-\Veyra-Know-When-Forecasts-May-Fail-VERSION-3-main\Veyra-Know-When-Forecasts-May-Fail-VERSION-3-main\backend\app\services\openmeteo_service.py:267: RuntimeWarning: Mean of empty slice
+    means = np.nanmean(arr, axis=0)
+
+backend/tests/test_day21_post_merge_repairs.py::test_accepted_compatibility_model_type_routes_to_v3
+  D:\Veyra-\Veyra-Know-When-Forecasts-May-Fail-VERSION-3-main\Veyra-Know-When-Forecasts-May-Fail-VERSION-3-main\.venv\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1997: RuntimeWarning: Degrees of freedom <= 0 for slice.
+    var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+
+backend/tests/test_day21_post_merge_repairs.py::test_accepted_compatibility_model_type_routes_to_v3
+  D:\Veyra-\Veyra-Know-When-Forecasts-May-Fail-VERSION-3-main\Veyra-Know-When-Forecasts-May-Fail-VERSION-3-main\backend\app\services\openmeteo_service.py:269: RuntimeWarning: All-NaN slice encountered
+    mins = np.nanmin(arr, axis=0)
+
+backend/tests/test_day21_post_merge_repairs.py::test_accepted_compatibility_model_type_routes_to_v3
+  D:\Veyra-\Veyra-Know-When-Forecasts-May-Fail-VERSION-3-main\Veyra-Know-When-Forecasts-May-Fail-VERSION-3-main\backend\app\services\openmeteo_service.py:270: RuntimeWarning: All-NaN slice encountered
+    maxs = np.nanmax(arr, axis=0)
+
+backend/tests/test_day21_post_merge_repairs.py::test_accepted_compatibility_model_type_routes_to_v3
+  D:\Veyra-\Veyra-Know-When-Forecasts-May-Fail-VERSION-3-main\Veyra-Know-When-Forecasts-May-Fail-VERSION-3-main\.venv\Lib\site-packages\numpy\lib\_nanfunctions_impl.py:1593: RuntimeWarning: All-NaN slice encountered
+    return fnb._ureduce(a,
+
+backend/tests/test_day24_probabilistic_intelligence.py: 5 warnings
+backend/tests/test_day25_dashboard_intelligence.py: 1 warning
+backend/tests/test_day33_ood_model_determinism.py: 1 warning
+backend/tests/test_day38_cross_provider_disagreement.py: 1 warning
+backend/tests/test_evaluation_integration.py: 8 warnings
+backend/tests/test_explainability_integration.py: 2 warnings
+backend/tests/test_final_cross_phase_integration.py: 1 warning
+backend/tests/test_model_integration.py: 12 warnings
+backend/tests/test_multi_location.py: 2 warnings
+backend/tests/test_phase7_evaluation_framework.py: 1 warning
+backend/tests/test_production_hardening.py: 1 warning
+backend/tests/test_replay_modes.py: 1 warning
+backend/tests/test_v3_artifact_integrity.py: 1 warning
+backend/tests/test_v3_calibration.py: 3 warnings
+backend/tests/test_v3_failure_safety.py: 3 warnings
+backend/tests/test_v3_feature_contract_authority.py: 4 warnings
+backend/tests/test_v3_reference_parity.py: 2 warnings
+  D:\Veyra-\Veyra-Know-When-Forecasts-May-Fail-VERSION-3-main\Veyra-Know-When-Forecasts-May-Fail-VERSION-3-main\.venv\Lib\site-packages\sklearn\base.py:525: InconsistentVersionWarning: Trying to unpickle estimator IsotonicRegression from version 1.9.0 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+  https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+    warnings.warn(
+
+backend/tests/test_final_readiness.py::test_model_serving_is_read_only
+backend/tests/test_final_readiness.py::test_failure_matrix_destructions_safe_abstention
+backend/tests/test_live_serving.py::test_live_feature_service_build_features
+backend/tests/test_live_serving.py::test_live_logistic_model_service_predict_probability
+backend/tests/test_live_serving.py::test_missing_model_artifact_safe_abstention
+backend/tests/test_live_serving.py::test_end_to_end_agent_live_prediction
+backend/tests/test_live_serving.py::test_end_to_end_predict_endpoint_with_live_pipeline
+backend/tests/test_live_serving.py::test_failed_weather_prerequisite_safely_abstains
+  D:\Veyra-\Veyra-Know-When-Forecasts-May-Fail-VERSION-3-main\Veyra-Know-When-Forecasts-May-Fail-VERSION-3-main\.venv\Lib\site-packages\sklearn\base.py:525: InconsistentVersionWarning: Trying to unpickle estimator LogisticRegression from version 1.9.0 when using version 1.9.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+  https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+    warnings.warn(
+
+backend/tests/test_phase9_security_hardening.py::test_l2_auth_rbac_and_input_bounds
+  D:\Veyra-\Veyra-Know-When-Forecasts-May-Fail-VERSION-3-main\Veyra-Know-When-Forecasts-May-Fail-VERSION-3-main\backend\tests\test_phase9_security_hardening.py:290: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+    sanitize_input_string("<script>alert(1)</script>")
+
+backend/tests/test_phase9_security_hardening.py::test_l2_auth_rbac_and_input_bounds
+  D:\Veyra-\Veyra-Know-When-Forecasts-May-Fail-VERSION-3-main\Veyra-Know-When-Forecasts-May-Fail-VERSION-3-main\backend\tests\test_phase9_security_hardening.py:293: StarletteDeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+    sanitize_input_string("A" * 150, max_length=100)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+1003 passed, 65 warnings in 422.22s (0:07:02)

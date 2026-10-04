@@ -1,0 +1,38 @@
+{
+  "models/v3/lightgbm_v3_challenger.joblib": {
+    "sha256": "00a8410746f4a0eecbf7e76aaa0565143fc948d0e06aea65e7bcc4ce28a1c660",
+    "size_bytes": 1046844
+  },
+  "models/v3/probability_calibrator_v3.joblib": {
+    "sha256": "9f448606ce4338ded92f238a551b3a9d8e6d2cb5902e8bc687bce5f5850af531",
+    "size_bytes": 2791
+  },
+  "models/v3/feature_names.json": {
+    "sha256": "702ff4153fd95d8c9de3bbd01461d65fde0ef207099f7f3a8e7f5c8bac02031e",
+    "size_bytes": 1063
+  },
+  "data/phase3/benchmark_real_dataset.jsonl": {
+    "sha256": "18556df7c3d11cf884e94ab38ca05b2c1789e9ec0382d607e9131702fd8a88a6",
+    "size_bytes": 18799909
+  },
+  "requirements.lock": {
+    "sha256": "8a8cac9c53188c1f6d11e488a10302c3c9865835bbd7c40c75ce0596538ba8fe",
+    "size_bytes": 45524
+  },
+  "requirements.txt": {
+    "sha256": "eba66b37f9bbb297167f0cf01503478f6f891cb9cbbf05bbcfe94f91c7175adf",
+    "size_bytes": 246
+  },
+  "frontend/package.json": {
+    "sha256": "aa5e82089bcde5f8bd269661600fd212e1c0331b10f8f648a0ef20d142461e4e",
+    "size_bytes": 822
+  },
+  "pyproject.toml": {
+    "sha256": "838a63993aa76c7bbb78ec066869bf86347ddc8d0f9ff6cbc4941dc907573a09",
+    "size_bytes": 825
+  },
+  "VEYRA_COMPLETE_PHASE_BY_PHASE_EXECUTION_MANUAL_V2.md": {
+    "sha256": "80cf7bb327a9c27f670a3ec2c5c0e6b7555e4d14c3686ce393eac786e154b42b",
+    "size_bytes": 555561
+  }
+}

@@ -1,0 +1,14 @@
+﻿=== Running Veyra Submission Smoke Suite Across Trust States ===
+
+Smoke Test Results Summary:
+  [READY       ] PASS: Nominal certified prediction generated with full provenance
+  [ABSTAIN     ] PASS: Safely uncertified / abstained without fabricating fake data
+  [OOD         ] PASS: OOD bounds correctly flagged: OUT_OF_PHYSICAL_SUPPORT
+  [LIVE        ] PASS: Primary live provider (Open-Meteo) configured
+  [CACHED      ] PASS: Provider caching layer operational
+  [FIXTURE     ] PASS: Secondary fixture provider produces verified fixture disclosures
+  [FALLBACK    ] PASS: Multi-provider disagreement analysis functioning
+  [SYNTHETIC   ] PASS: Synthetic digital twin modules strictly isolated with SYNTHETIC label
+  [UNAVAILABLE ] PASS: Temporal impossibility handled cleanly without unhandled crash
+
+[ALL 9 TRUST & PROVENANCE STATES VERIFIED SUCCESSFULLY]

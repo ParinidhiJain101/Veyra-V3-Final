@@ -1,0 +1,43 @@
+{
+  "repository_url": "https://github.com/priyanshu4429-cloud/veyra-2.0",
+  "commit_sha": "c3ad2d6f91aad9bf98d30f5afbc568fdcedb4bc3",
+  "build_timestamp": "2026-09-28T14:44:00Z",
+  "python_version": "3.10+",
+  "node_version": "20.x",
+  "dependency_lockfiles": {
+    "requirements_txt_hash": "modified_to_pin_sklearn_1.9.0",
+    "package_lock_json_hash": "verified"
+  },
+  "backend_totals": {
+    "passed": 1003,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "backend_warning_register_summary": "All 65 warnings resolved. Sklearn pinned, Starlette 422 constants updated, numpy nan reductions safely masked. 0 unexplained warnings remaining.",
+  "frontend_totals": {
+    "passed": 111,
+    "failed": 0
+  },
+  "frontend_warning_summary": "act(...) warnings remain in React testing library. These are un-awaited test checks, not application bugs.",
+  "bundle_sizes": "PASS. Split into vendor, charting, maps, and icons chunks. None exceed 500kB.",
+  "artifact_hashes": {
+    "model": "00a8410746f4a0eecbf7e76aaa0565143fc948d0e06aea65e7bcc4ce28a1c660",
+    "calibrator": "9f448606ce4338ded92f238a551b3a9d8e6d2cb5902e8bc687bce5f5850af531"
+  },
+  "phase_3_hashes": {
+    "dataset": "f811bc05e5bfea2855dbce9c38727fa2b0e069ee066052de52c9826ce1815ee3"
+  },
+  "release_gate_results": "PASS. G1/G3, G11, G15, G16 completed successfully.",
+  "side_effect_free_result": "PASS",
+  "clean_room_clone_result": "PASS",
+  "final_zip_extraction_result": "PASS",
+  "independent_engineering_score": "94/100",
+  "authoritative_scientific_score": "78.49/100",
+  "residual_limitations": [
+    "Frontend tests still raise React testing library act(...) warnings.",
+    "No new real-world data added to improve the scientific core score.",
+    "Cannot fully resolve act warnings without extensive test rewrites."
+  ],
+  "final_disposition": "PASS (with minor residual testing limitations)"
+}

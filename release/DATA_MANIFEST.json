@@ -1,0 +1,29 @@
+{
+  "dataset_name": "VEYRA Out-Of-Time Benchmark Evaluation Corpus",
+  "dataset_version": "v3-p3",
+  "primary_file": "data/phase3/benchmark_real_dataset.jsonl",
+  "sha256": "18556df7c3d11cf884e94ab38ca05b2c1789e9ec0382d607e9131702fd8a88a6",
+  "total_records": 15000,
+  "total_bust_events": 1056,
+  "climatological_prevalence": 0.0704,
+  "temporal_range": {
+    "start_utc": "2024-07-01T00:00:00Z",
+    "end_utc": "2024-12-31T23:59:59Z"
+  },
+  "spatial_stations": 15,
+  "certified_operational_stations": 25,
+  "ground_truth_sources": [
+    "IMD AWS Surface Network",
+    "ERA5 Atmospheric Reanalysis"
+  ],
+  "nwp_forecast_sources": [
+    "NOAA GEFS v12 Cycles",
+    "Open-Meteo Proxy"
+  ],
+  "leakage_audit": {
+    "temporal_overlap_errors": 0,
+    "lookahead_feature_errors": 0,
+    "label_leakage_errors": 0,
+    "spatial_leakage_status": "ISOLATED"
+  }
+}

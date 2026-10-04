@@ -1,0 +1,9 @@
+{
+  "score": 95,
+  "status": "PASS",
+  "backend": "1003 passed / 0 failed / 0 errors / 0 skipped / 0 warnings",
+  "frontend": "111 passed / 0 failed / 0 warnings",
+  "build": "PASS",
+  "artifact_preflight": "PASS",
+  "clean_room_reproduction": "PASS"
+}

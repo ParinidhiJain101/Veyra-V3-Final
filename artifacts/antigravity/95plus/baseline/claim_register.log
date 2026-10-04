@@ -1,0 +1,7 @@
+﻿Validating Claim Register at: manifests/claim_register.csv
+[PASS] Verified 19 claims across required evidence classes.
+  - CONTRADICTED: 3 claims
+  - DOCUMENTATION_ONLY: 2 claims
+  - REPRODUCED: 8 claims
+  - SUPPORTED_BY_TEST_FIXTURE_ONLY: 6 claims
+=== GATE P0-1 COMPULSORY CLAIM REGISTER VALIDATION PASSED ===

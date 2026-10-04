@@ -1,0 +1,28 @@
+{
+  "test_run_id": "TEST-RUN-20260929-173000",
+  "test_frameworks": {
+    "backend": "pytest 9.1.1 (Python 3.10.11)",
+    "frontend": "vitest 3.2.7 (Node 20.x, React 18.3.1)"
+  },
+  "backend_results": {
+    "total_files": 110,
+    "total_tests": 1003,
+    "passed": 1003,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "status": "PASSED"
+  },
+  "frontend_results": {
+    "total_files": 11,
+    "total_tests": 129,
+    "passed": 129,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "status": "PASSED"
+  },
+  "total_tests_passed": 1132,
+  "total_tests_failed": 0,
+  "all_suites_passed": true
+}

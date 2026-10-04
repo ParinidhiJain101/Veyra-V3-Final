@@ -1,0 +1,42 @@
+Veyra [GIT MODE] reproduction for sih-round2-submission-v1.1.3 SUCCESSFUL at commit b5344b9e5b5e768c82f9d6b79d87bea0b899dd9a
+Tag Dereference Commit SHA: b5344b9e5b5e768c82f9d6b79d87bea0b899dd9a
+Final HEAD Commit SHA:       b5344b9e5b5e768c82f9d6b79d87bea0b899dd9a
+Backend Tests Passed:        1003 (0 failed, 0 errors)
+Frontend Tests Passed:       129 across 26 suites
+Summary: {
+  "schema_version": "1.0.0",
+  "timestamp": "2026-09-29T14:15:19.362252+00:00",
+  "candidate_tag": "sih-round2-submission-v1.1.3",
+  "baseline_sha": "94745df06298ee5daab3144e329885f780958bad",
+  "checked_out_commit_sha": "b5344b9e5b5e768c82f9d6b79d87bea0b899dd9a",
+  "total_tests": 1132,
+  "total_passed": 1132,
+  "total_failed": 0,
+  "total_errors": 0,
+  "total_skipped": 0,
+  "backend_result": {
+    "framework": "pytest",
+    "total_tests": 1003,
+    "passed": 1003,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "duration_seconds": 244.555,
+    "status": "PASSED"
+  },
+  "frontend_result": {
+    "framework": "vitest",
+    "test_suites": 26,
+    "test_files": 26,
+    "total_tests": 129,
+    "passed": 129,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0,
+    "pending": 0,
+    "todo": 0,
+    "success": true,
+    "status": "PASSED"
+  },
+  "status": "PASSED"
+}
