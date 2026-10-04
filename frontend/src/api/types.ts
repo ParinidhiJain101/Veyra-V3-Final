@@ -728,14 +728,30 @@ export interface ObservedScope {
 }
 
 export interface ScientificCertificationResult {
-  certification_status: CertificationStatus;
-  certification_reason: string;
-  certification_policy_version: string;
+  // Authoritative backend schema fields (backend/app/schemas/certification.py)
+  status?: CertificationStatus;
   is_certified: boolean;
-  model_sha256_verified: boolean;
-  calibrator_sha256_verified: boolean;
-  certified_scope: CertifiedScope;
-  observed_scope: ObservedScope;
+  reason_code?: string;
+  reason_detail?: string;
+  policy_version?: string;
+  model_sha256?: string;
+  calibrator_sha256?: string;
+  evaluated_location?: string | null;
+  evaluated_variable?: string | null;
+  evaluated_lead_hours?: number | null;
+  certified_benchmark_stations?: string[];
+  certified_variables?: string[];
+  max_certified_lead_hours?: number;
+  certified_evaluation_period?: string;
+
+  // Backward-compatible alias fields
+  certification_status?: CertificationStatus;
+  certification_reason?: string;
+  certification_policy_version?: string;
+  model_sha256_verified?: boolean;
+  calibrator_sha256_verified?: boolean;
+  certified_scope?: CertifiedScope;
+  observed_scope?: ObservedScope;
 }
 
 export interface CertificationEvaluationRequest {

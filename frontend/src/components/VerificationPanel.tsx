@@ -107,14 +107,22 @@ export const VerificationPanel: React.FC<VerificationPanelProps> = ({
   const leadHours = selectedPoint ? selectedPoint.lead_hours : 24;
   const isBenchmarkLead = selectedPoint ? selectedPoint.is_certified_horizon : (leadHours <= 240);
 
-  const rawCertStatus = prediction?.certification?.certification_status;
+  const certStatus =
+    prediction?.certification?.status ||
+    prediction?.certification?.certification_status;
+
+  const certReason =
+    prediction?.certification?.reason_detail ||
+    prediction?.certification?.certification_reason;
+
+  const rawCertStatus = certStatus;
   const effectiveCertStatus = !isBenchmarkLead
     ? 'OUTSIDE_CERTIFIED_SCOPE'
     : rawCertStatus || (isAbstain ? 'OUTSIDE_CERTIFIED_SCOPE' : 'CERTIFICATION_UNKNOWN');
 
   const effectiveCertReason = !isBenchmarkLead
     ? `Lead horizon ${leadHours}h exceeds maximum certified benchmark horizon (240h).`
-    : prediction?.certification?.certification_reason ||
+    : certReason ||
       (effectiveCertStatus === 'CERTIFIED'
         ? 'Request lies within frozen benchmark evidence boundary.'
         : 'Location or variable lies outside frozen benchmark evidence boundary.');

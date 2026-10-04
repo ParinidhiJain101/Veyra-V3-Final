@@ -338,43 +338,55 @@ export const PredictionResult: React.FC<PredictionResultProps> = ({ prediction }
         )}
 
         {/* Scientific Certification Badge */}
-        {prediction.certification && (
-          <div
-            className={`trust-badge cert-badge ${
-              prediction.certification.certification_status === 'CERTIFIED'
-                ? 'cert-certified'
-                : prediction.certification.certification_status === 'OUTSIDE_CERTIFIED_SCOPE'
-                ? 'cert-outside'
-                : 'cert-unknown'
-            }`}
-            role="status"
-            aria-label={`Scientific Certification: ${prediction.certification.certification_status}`}
-            title={`Scientific Certification (${prediction.certification.certification_policy_version}): ${prediction.certification.certification_reason}`}
-            style={{
-              borderColor:
-                prediction.certification.certification_status === 'CERTIFIED'
-                  ? '#10b981'
-                  : prediction.certification.certification_status === 'OUTSIDE_CERTIFIED_SCOPE'
-                  ? '#f59e0b'
-                  : '#ef4444',
-              color:
-                prediction.certification.certification_status === 'CERTIFIED'
-                  ? '#059669'
-                  : prediction.certification.certification_status === 'OUTSIDE_CERTIFIED_SCOPE'
-                  ? '#d97706'
-                  : '#dc2626',
-              fontWeight: 600,
-            }}
-          >
-            <span>
-              {prediction.certification.certification_status === 'CERTIFIED'
-                ? 'CERTIFIED EVIDENCE SCOPE'
-                : prediction.certification.certification_status === 'OUTSIDE_CERTIFIED_SCOPE'
-                ? 'OUTSIDE CERTIFIED EVIDENCE SCOPE'
-                : 'CERTIFICATION UNKNOWN'}
-            </span>
-          </div>
-        )}
+        {prediction.certification && (() => {
+          const certStatus =
+            prediction.certification.status ||
+            prediction.certification.certification_status;
+          const certReason =
+            prediction.certification.reason_detail ||
+            prediction.certification.certification_reason;
+          const policyVersion =
+            prediction.certification.policy_version ||
+            prediction.certification.certification_policy_version;
+
+          return (
+            <div
+              className={`trust-badge cert-badge ${
+                certStatus === 'CERTIFIED'
+                  ? 'cert-certified'
+                  : certStatus === 'OUTSIDE_CERTIFIED_SCOPE'
+                  ? 'cert-outside'
+                  : 'cert-unknown'
+              }`}
+              role="status"
+              aria-label={`Scientific Certification: ${certStatus}`}
+              title={`Scientific Certification (${policyVersion || 'v3.0.0-frozen-benchmark'}): ${certReason || ''}`}
+              style={{
+                borderColor:
+                  certStatus === 'CERTIFIED'
+                    ? '#10b981'
+                    : certStatus === 'OUTSIDE_CERTIFIED_SCOPE'
+                    ? '#f59e0b'
+                    : '#ef4444',
+                color:
+                  certStatus === 'CERTIFIED'
+                    ? '#059669'
+                    : certStatus === 'OUTSIDE_CERTIFIED_SCOPE'
+                    ? '#d97706'
+                    : '#dc2626',
+                fontWeight: 600,
+              }}
+            >
+              <span>
+                {certStatus === 'CERTIFIED'
+                  ? 'CERTIFIED EVIDENCE SCOPE'
+                  : certStatus === 'OUTSIDE_CERTIFIED_SCOPE'
+                  ? 'OUTSIDE CERTIFIED EVIDENCE SCOPE'
+                  : 'CERTIFICATION UNKNOWN'}
+              </span>
+            </div>
+          );
+        })()}
       </div>
     </section>
   );

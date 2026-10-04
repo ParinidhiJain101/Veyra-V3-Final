@@ -347,6 +347,91 @@ describe('Scientific Certification Frontend Integration Tests', () => {
       expect(screen.getByText('OUTSIDE CERTIFIED SCOPE')).toBeInTheDocument();
       expect(screen.getByText('Outside Benchmark Scope')).toBeInTheDocument();
     });
+
+    it('renders CERTIFIED status with backend authoritative status/reason_detail schema for Delhi 144h', () => {
+      const mockPrediction: PredictionResponse = {
+        location: 'Delhi',
+        bust_probability: 0.08,
+        risk_level: 'LOW',
+        trust_state: 'HIGH_CONFIDENCE',
+        abstain: false,
+        reason_codes: ['NOMINAL_PIPELINE'],
+        model_version: 'veyra-v3-benchmark-lightgbm',
+        data_version: 'gefs-openmeteo-v1.0',
+        explanation: null,
+        certification: {
+          status: 'CERTIFIED',
+          is_certified: true,
+          reason_code: 'CERTIFIED_FROZEN_BENCHMARK_SCOPE',
+          reason_detail: 'Request lies within frozen benchmark evidence boundary.',
+          policy_version: 'v3.0.0-frozen-benchmark',
+          model_sha256: '99059e9a4f4efbfe72cbfe37494daff120f2695fb77e52292f7e090db4a5b3a4',
+          calibrator_sha256: '1daee2ff807755b76bfa254ff03ebc18a2ca819fef20b0805c6a1bf58416d2b4',
+          evaluated_location: 'Delhi',
+          evaluated_variable: 'temperature_2m',
+          evaluated_lead_hours: 144,
+          certified_benchmark_stations: ['Delhi', 'Mumbai', 'Kolkata'],
+          certified_variables: ['temperature_2m', 'wind_speed_10m', 'surface_pressure'],
+          max_certified_lead_hours: 240,
+          certified_evaluation_period: '2017-2019 (Test Holdout)',
+        },
+      };
+
+      const mockPoint = {
+        lead_hours: 144,
+        lead_days: 6,
+        valid_time: '2026-09-18T12:00:00Z',
+        bust_probability: 0.08,
+        risk_level: 'LOW' as const,
+        trust_state: 'HIGH_CONFIDENCE' as const,
+        abstain: false,
+        is_certified_horizon: true,
+        reason_codes: ['NOMINAL_PIPELINE'],
+      };
+
+      render(
+        <VerificationPanel
+          prediction={mockPrediction}
+          selectedPoint={mockPoint}
+          locationQuery="Delhi"
+          variable="temperature_2m"
+        />
+      );
+
+      // Telemetry Header distinguishes lead scope:
+      expect(screen.getByText(/144h Horizon • Within Frozen Benchmark Lead Scope \(≤240h\)/i)).toBeInTheDocument();
+      // Scientific Certification Banner displays CERTIFIED
+      expect(screen.getByText('CERTIFIED')).toBeInTheDocument();
+      expect(screen.getByText('25-Station Evidence Scope')).toBeInTheDocument();
+      // MUST NOT display CERTIFICATION UNKNOWN or Outside Benchmark Scope:
+      expect(screen.queryByText('CERTIFICATION UNKNOWN')).not.toBeInTheDocument();
+      expect(screen.queryByText('Outside Benchmark Scope')).not.toBeInTheDocument();
+    });
+
+    it('renders CERTIFIED EVIDENCE SCOPE in PredictionResult with backend authoritative status schema', () => {
+      const mockPrediction: PredictionResponse = {
+        location: 'Delhi',
+        bust_probability: 0.08,
+        risk_level: 'LOW',
+        trust_state: 'HIGH_CONFIDENCE',
+        abstain: false,
+        reason_codes: ['NOMINAL_PIPELINE'],
+        model_version: 'veyra-v3-benchmark-lightgbm',
+        data_version: 'gefs-openmeteo-v1.0',
+        explanation: null,
+        certification: {
+          status: 'CERTIFIED',
+          is_certified: true,
+          reason_code: 'CERTIFIED_FROZEN_BENCHMARK_SCOPE',
+          reason_detail: 'Request lies within frozen benchmark evidence boundary.',
+          policy_version: 'v3.0.0-frozen-benchmark',
+        },
+      };
+
+      render(<PredictionResult prediction={mockPrediction} />);
+      expect(screen.getByText('CERTIFIED EVIDENCE SCOPE')).toBeInTheDocument();
+      expect(screen.queryByText('CERTIFICATION UNKNOWN')).not.toBeInTheDocument();
+    });
   });
 });
 
